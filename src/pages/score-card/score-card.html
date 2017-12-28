@@ -1,0 +1,26 @@
+<!--
+  Generated template for the ScoreCardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding>
+  <ion-label>Score Card</ion-label>
+  <img src="assets/imgs/close.png" id="close" (click)="close()">
+  <table>
+    <tr>
+      <th>Round</th>
+      <th *ngFor="let i of userData">{{i.name}}</th>
+    </tr>
+    <tr *ngFor="let i of temp">
+      <td>{{i+1}}</td>
+      <td *ngFor="let j of userData" [ngClass]="j.finalScore[i] == 0 ? 'victory' : (j.finalScore[i] == 100 ? 'penalty' : 'normal')">{{j.finalScore[i]}}</td>
+    </tr>
+    <tr>
+      <td class="total">Total</td>
+      <td class="total" *ngFor="let k of total">{{k}}</td>
+    </tr>
+  </table>
+</ion-content>

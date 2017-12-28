@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding>
+  <ion-label>Profile</ion-label>
+  <img src="assets/imgs/close.png" id="close" (click)="close()">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img id="img" [src]="pic" onerror="this.src='assets/imgs/avatar.jpg';"/>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col class="left">Name</ion-col>
+          <ion-col class="right">{{name}}</ion-col>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col class="left">Email</ion-col>
+          <ion-col class="right">{{email}}</ion-col>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col class="left">Date of Birth</ion-col>
+          <ion-col class="right">{{dob}}</ion-col>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col class="left">Unique ID</ion-col>
+          <ion-col class="right">{{id}}</ion-col>
+        </ion-row>        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

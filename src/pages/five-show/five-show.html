@@ -1,0 +1,69 @@
+<!--
+  Generated template for the FiveShowPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content ion-fixed id="content" padding>
+  <div id="table">
+    <img id="self1" class="self" class="self" [src]="userData[0].picture">
+    <img id="self2" *ngIf="no==5" class="self" class="self" [src]="userData[1].picture">
+    <img id="self3" *ngIf="no==4" class="self" class="self" [src]="userData[1].picture">
+    <img id="self4" *ngIf="no==3" class="self" class="self" [src]="userData[1].picture">
+    <img id="self4" *ngIf="no==5" class="self" class="self" [src]="userData[2].picture">
+    <img id="self5" *ngIf="no==2" class="self" class="self" [src]="userData[1].picture">
+    <img id="self5" *ngIf="no ==4" class="self" class="self" [src]="userData[2].picture">
+    <img id="self6" *ngIf="no==3" class="self" class="self" [src]="userData[2].picture">
+    <img id="self6" *ngIf="no==5" class="self" class="self" [src]="userData[3].picture">
+    <img id="self7" *ngIf="no==4" class="self" class="self" [src]="userData[3].picture">
+    <img id="self8" *ngIf="no==5" class="self" class="self" [src]="userData[4].picture">
+    <ion-label text-wrap id="name1" class="name">{{userData[0].name}}</ion-label>
+    <ion-label *ngIf="no==5" text-wrap id="name2" class="name">{{userData[1].name}}</ion-label>
+    <ion-label *ngIf="no==4" text-wrap id="name3" class="name">{{userData[1].name}}</ion-label>
+    <ion-label *ngIf="no==3" text-wrap id="name4" class="name">{{userData[1].name}}</ion-label>
+    <ion-label *ngIf="no==5" text-wrap id="name4" class="name">{{userData[2].name}}</ion-label>
+    <ion-label *ngIf="no==2" text-wrap id="name5" class="name">{{userData[1].name}}</ion-label>
+    <ion-label *ngIf="no==4" text-wrap id="name5" class="name">{{userData[2].name}}</ion-label>
+    <ion-label *ngIf="no==3" text-wrap id="name6" class="name">{{userData[2].name}}</ion-label>
+    <ion-label *ngIf="no==5" text-wrap id="name6" class="name">{{userData[3].name}}</ion-label>
+    <ion-label *ngIf="no==4" text-wrap id="name7" class="name">{{userData[3].name}}</ion-label>
+    <ion-label *ngIf="no==5" text-wrap id="name8" class="name">{{userData[4].name}}</ion-label>
+    <img class="card-back-big" id="card1-1" *ngIf="userData[0].cardsInHand.length>0" [src]="imagePath1" (click)="cardSelected(1)" [ngClass]="this.highlightCard1 ? 'highlightCard' : 'removeHighlightCard'">
+    <img class="card-back-big" id="card1-2" *ngIf="userData[0].cardsInHand.length>1" [src]="imagePath2" (click)="cardSelected(2)" [ngClass]="this.highlightCard2 ? 'highlightCard' : 'removeHighlightCard'">
+    <img class="card-back-big" id="card1-3" *ngIf="userData[0].cardsInHand.length>2" [src]="imagePath3" (click)="cardSelected(3)" [ngClass]="this.highlightCard3 ? 'highlightCard' : 'removeHighlightCard'">
+    <img class="card-back-big" id="card1-4" *ngIf="userData[0].cardsInHand.length>3" [src]="imagePath4" (click)="cardSelected(4)" [ngClass]="this.highlightCard4 ? 'highlightCard' : 'removeHighlightCard'">
+    <img class="card-back-big" id="card1-5" *ngIf="userData[0].cardsInHand.length>4" [src]="imagePath5" (click)="cardSelected(5)" [ngClass]="this.highlightCard5 ? 'highlightCard' : 'removeHighlightCard'">
+    <img *ngIf="no==5" class="card-back" id="card2" src="assets/imgs/card-back.png">
+    <img *ngIf="no==4" class="card-back" id="card3" src="assets/imgs/card-back.png">
+    <img *ngIf="no==3 || no==5" class="card-back" id="card4" src="assets/imgs/card-back.png">
+    <img *ngIf="no==2 || no==4" class="card-back" id="card5" src="assets/imgs/card-back.png">
+    <img *ngIf="no==3 || no==5" class="card-back" id="card6" src="assets/imgs/card-back.png">
+    <img *ngIf="no==4" class="card-back" id="card7" src="assets/imgs/card-back.png">
+    <img *ngIf="no==5" class="card-back" id="card8" src="assets/imgs/card-back.png">
+    <img class="card-front" id="card-center-back-1" src="assets/imgs/card-back.png">
+    <img class="card-front" id="card-center-back-2" src="assets/imgs/card-back.png">
+    <img class="card-front" id="card-center-back-3" src="assets/imgs/card-back.png">
+    <img class="card-front" id="card-center-back-4" src="assets/imgs/card-back.png">
+    <img class="card-front" id="card-center-1" [src]="cardInTable1" *ngIf="this.cardsInTable.length>2">
+    <img class="card-front" id="card-center-2" [src]="cardInTable2" *ngIf="this.cardsInTable.length>1">
+    <img class="card-front" id="card-center-3" [src]="cardInTable3" *ngIf="this.cardsInTable.length>0">
+    <round-progress *ngIf="showTimer[0]" id="round1" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==5&&showTimer[1]" id="round2" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==4&&showTimer[1]" id="round3" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==3&&showTimer[1]" id="round4" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==5&&showTimer[2]" id="round4" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>    
+    <round-progress *ngIf="no==2&&showTimer[1]" id="round5" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==4&&showTimer[2]" id="round5" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==3&&showTimer[2]" id="round6" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==5&&showTimer[3]" id="round6" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==4&&showTimer[3]" id="round7" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>
+    <round-progress *ngIf="no==5&&showTimer[4]" id="round8" [current]="currentTimer" [max]="30" [color]="'#FFDF00'" [radius]="39" [stroke]="5" [rounded]="true" [clockwise]="false"></round-progress>  
+    <button ion-button class="b" id="pickFromDeck" *ngIf="!isShow && myTurn" [disabled]="!correctPick" (click)="pickFromDeck()"><p class="small">Pick from Deck</p></button>
+    <button ion-button class="b" id="pickFromTable" *ngIf="!isShow && myTurn" [disabled]="!correctPick" (click)="pickFromTable()"><p class="small">Pick from Table</p></button>
+    <button ion-button class="b" id="show" *ngIf="isShow && myTurn" (click)="show()"><p class="small">Show !</p></button>
+    <ion-label id="sum">Total Sum : {{sum}}</ion-label>
+    <button ion-button class="b" id="score" (click)="score()"><p class="small">Score</p></button>    
+  </div>
+</ion-content>

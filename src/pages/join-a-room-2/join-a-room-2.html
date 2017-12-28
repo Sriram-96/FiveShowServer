@@ -1,0 +1,20 @@
+<!--
+  Generated template for the JoinARoom_2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding>
+  <ion-label>Join a Room</ion-label>
+  <ion-label id="l1">You have joined the room :</ion-label>
+  <ion-label id="l2">{{code}}</ion-label>
+  <ion-label id="l3">Members :</ion-label>
+  <ion-list *ngFor="let i of members" id="l4" [ngClass]="i.color == 'green' ? 'gr' : 're'">
+    <img id="img" [src]="i.picture" onerror="this.src='assets/imgs/avatar.jpg';"/>
+    <ion-label id="name">{{i.name}}</ion-label>
+  </ion-list>
+  <button ion-button class="b b2" (click)="ready()" *ngIf="currentColor === 'red'">I'm ready</button>
+  <button ion-button class="b b2" (click)="ready()" *ngIf="currentColor === 'green'">I'm not ready</button>
+</ion-content>

@@ -1,0 +1,267 @@
+page-five-show {
+#table {
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 3px solid;
+    border-color: white;
+    border-radius: 200px;
+    background-color: green;
+    box-shadow: 5px 5px 10px white;
+}
+#content {
+    background-color: rgb(117, 9, 9) !important;
+}
+.self {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+}
+.name {
+    position: absolute;
+    text-align: center;
+    width: 10%;
+}
+#self1 {
+    margin-top: 35%;
+    margin-left: 32.5%;
+}
+#self2 {
+    margin-top: 30%;
+    margin-left: 0%;
+}
+#self3 {
+    margin-top: 15%;
+    margin-left: -5%;
+}
+#self4 {
+    margin-top: 0%;
+    margin-left: 0%;
+}
+#self5 {
+    margin-top: -5%;
+    margin-left: 32.5%;
+}
+#self6 {
+    margin-top: 0%;
+    margin-left: 65%;
+}
+#self7 {
+    margin-top: 15%;
+    margin-left: 70%;
+}
+#self8 {
+    margin-top: 30%;
+    margin-left: 65%;
+}
+#name1 {
+    margin-top: 45%;
+    margin-left: 32.5%;
+}
+#name2 {
+    margin-top: 40%;
+    margin-left: 0%;
+}
+#name3 {
+    margin-top: 25%;
+    margin-left: -5%;
+}
+#name4 {
+    margin-top: 10%;
+    margin-left: 0%;
+}
+#name5 {
+    margin-top: -7.5%;
+    margin-left: 32.5%;
+}
+#name6 {
+    margin-top: 10%;
+    margin-left: 65%;
+}
+#name7 {
+    margin-top: 25%;
+    margin-left: 70%;
+}
+#name8 {
+    margin-top: 40%;
+    margin-left: 65%;
+}
+.card-back {
+    height: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10 !important;
+}
+.card-back-big {
+    height: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 10 !important;
+}
+#card1-1 {
+    margin-top: 25%;
+    margin-left: 20%;
+}
+#card1-2 {
+    margin-top: 25%;
+    margin-left: 27%;
+}
+#card1-3 {
+    margin-top: 25%;
+    margin-left: 34%;
+}
+#card1-4 {
+    margin-top: 25%;
+    margin-left: 41%;
+}
+#card1-5 {
+    margin-top: 25%;
+    margin-left: 48%;
+}
+#card2 {
+    margin-top: 24%;
+    margin-left: 10%;
+}
+#card3 {
+    margin-top: 16%;
+    margin-left: 6%;
+}
+#card4 {
+    margin-top: 7%;
+    margin-left: 10%;
+}
+#card5 {
+    margin-top: 5%;
+    margin-left: 34.5%;
+}
+#card6 {
+    margin-top: 7%;
+    margin-left: 60%;
+}
+#card7 {
+    margin-top: 16%;
+    margin-left: 64%;
+}
+#card8 {
+    margin-top: 24%;
+    margin-left: 60%;
+}
+.card-front {
+    height: 80px;
+    height: 80px;
+    position: absolute;
+}
+#card-center-1 {
+    margin-top: 14%;
+    margin-left: 31%;
+    z-index: 0 !important;
+}
+#card-center-2 {
+    margin-top: 14%;
+    margin-left: 35%;
+    z-index: 5 !important;
+}
+#card-center-3 {
+    margin-top: 14%;
+    margin-left: 39%;
+    z-index: 10 !important;
+}
+#card-center-back-1 {
+    margin-top: 14%;
+    margin-left: 17%;
+}
+#card-center-back-2 {
+    margin-top: 14%;
+    margin-left: 18%;
+}
+#card-center-back-3 {
+    margin-top: 14%;
+    margin-left: 19%;
+}
+#card-center-back-4 {
+    margin-top: 14%;
+    margin-left: 20%;
+}
+#round1 {
+    margin-top: 34.5%;
+    margin-left: 32%;
+    position: absolute;
+}
+#round2 {
+    margin-top: 29.5%;
+    margin-left: -0.5%;
+    position: absolute;
+}
+#round3 {
+    margin-top: 14.5%;
+    margin-left: -5.5%;
+    position: absolute;
+}
+#round4 {
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+    position: absolute;
+}
+#round5 {
+    margin-top: -5.5%;
+    margin-left: 32%;
+    position: absolute;
+}
+#round6 {
+    margin-top: -0.5%;
+    margin-left: 64.5%;
+    position: absolute;
+}
+#round7 {
+    margin-top: 14.5%;
+    margin-left: 69.5%;
+    position: absolute;
+}
+#round8 {
+    margin-top: 29.5%;
+    margin-left: 64.5%;
+    position: absolute;
+}
+.animate {
+    transition: margin-top 2s,margin-left 2s;
+}
+.small {
+    font-size: 10px;
+}
+#pickFromDeck{
+    margin-top: 57%;
+    margin-left: 71%;
+}
+#pickFromTable {
+    margin-top: -6.5%;
+    margin-left: 93%;
+}
+#show {
+    margin-top: 57%;
+    margin-left: 103%;
+}
+#sum {
+    position: absolute;
+    bottom: 0;
+    margin-left: -10%;
+    float: left;
+}
+.highlightCard {
+    width: 80px;
+    height: 80px;
+}
+.removeHighlightCard {
+    border: none;
+    width: 70px;
+    height: 70px;
+}
+#score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+}

@@ -1,0 +1,28 @@
+page-profile {
+max-height: 80%;
+max-width: 80%;
+margin-top: 5%;
+margin-left: 10%;
+border: 2px solid;
+border-color: white; 
+border-radius: 5px;
+#img {
+    width: 220px;
+    height: 220px;
+    margin-left: 10px;
+}
+ion-col {
+    color: white;
+}
+.left,.right {
+    border: 1px solid;
+    max-width: 50%;
+}
+#close {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: -55px;
+    margin-right: -10px;
+}
+}

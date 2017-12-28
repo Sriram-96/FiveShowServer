@@ -1,0 +1,37 @@
+page-score-card {
+max-height: 80%;
+max-width: 80%;
+margin-top: 5%;
+margin-left: 10%;
+border: 2px solid;
+border-color: white; 
+border-radius: 5px;
+#close {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: -55px;
+    margin-right: -10px;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+}
+th,td {
+    padding: 10px;
+    text-align: center;
+}
+table {
+    margin: auto;
+}
+.penalty {
+    background-color: red;
+}
+.victory {
+    background-color: rgb(255, 115, 0);
+}
+.total {
+    background-color: rgb(13, 107, 214);
+}
+}
